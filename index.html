@@ -1,265 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eCommerce Landing Page</title>
-    <!-- ✅ Official Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eCommerce Landing Page</title>
 
-  </head>
-  <body class="bg-white text-gray-900">
- <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-gradient-to-r from-blue-50 to-white">
-  <!-- Text Content -->
-  <div class="md:w-1/2 text-center md:text-left">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-800 leading-tight">
-      Elevate Your Lifestyle<br class="hidden md:block" />
-      With Premium Products
-    </h1>
-    <p class="text-lg text-gray-600 mb-6">
-      From daily essentials to exclusive items – discover everything you need in one place.
-    </p>
-    <a href="#products">
-      <button
-        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300"
-      >
-        🛍️ Start Shopping
-      </button>
-    </a>
-  </div>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Hero Image -->
-  <div class="md:w-1/2 mb-10 md:mb-0">
-    <img
-      src="/images/pexels-shattha-pilabut-38930-135620.jpg"
-      alt="Stylish Storefront"
-      class="w-full rounded-xl shadow-xl"
-    />
-  </div>
-</section>
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
-    <!-- Product Showcase -->
-    <section id="products" class="py-16 px-6 md:px-20 bg-white">
-      <h2 class="text-3xl font-bold text-center mb-12">
-        Our Featured Products
-      </h2>
-      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Product Card 1 -->
-        <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-          <img
-            src="/images/smart watch.jpg"
-            alt="Product 1"
-            class="w-full rounded mb-4"
-          />
-          <h3 class="text-xl font-semibold mb-2">Smart Watch</h3>
-          <p class="text-gray-600 mb-4">
-            Track your health and stay connected with our latest smart watch.
-          </p>
-          <button
-            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
-            Buy Now
-          </button>
-        </div>
+<body class="bg-white text-gray-900">
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-20 bg-gradient-to-r from-blue-50 to-white">
+    <!-- Text Content -->
+    <div class="md:w-1/2 text-center md:text-left md:pr-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-800 leading-tight">
+        Elevate Your Lifestyle<br class="hidden md:block" />
+        With Premium Products
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto md:mx-0">
+        From daily essentials to exclusive items – discover everything you need in one place.
+      </p>
+      <a href="#products">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+          🛍️ Start Shopping
+        </button>
+      </a>
+    </div>
 
-        <!-- Product Card 2 -->
-        <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-          <img
-            src="/images/wireless headphone.jpg"
-            alt="Product 2"
-            class="w-full rounded mb-4"
-          />
-          <h3 class="text-xl font-semibold mb-2">Wireless Headphones</h3>
-          <p class="text-gray-600 mb-4">
-            Enjoy high-quality sound with our noise-cancelling wireless
-            headphones.
-          </p>
-          <button
-            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
-            Buy Now
-          </button>
-        </div>
+    <!-- Hero Image -->
+    <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+      <img
+        src="/images/pexels-shattha-pilabut-38930-135620.jpg"
+        alt="Stylish Storefront"
+        class="w-full max-w-md md:max-w-lg rounded-xl shadow-xl"
+      />
+    </div>
+  </section>
 
-        <!-- Product Card 3 -->
-        <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-          <img
-            src="/images/Blutooth speaker.jpg"
-            alt="Product 3"
-            class="w-full rounded mb-4"
-          />
-          <h3 class="text-xl font-semibold mb-2">Bluetooth Speaker</h3>
-          <p class="text-gray-600 mb-4">
-            Enjoy powerful sound and deep bass anywhere with our compact
-            portable speaker.
-          </p>
-          <button
-            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
-            Buy Now
-          </button>
-        </div>
-     
-
-<!-- Product Card 4 -->
-<div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-  <img
-    src="/images/sunglasses.jpg"
-    alt="Product 3"
-    class="w-full rounded mb-4"
-  />
-  <h3 class="text-xl font-semibold mb-2">Sunglasses</h3>
-  <p class="text-gray-600 mb-4">
-    Stylish UV-protection sunglasses to keep your eyes safe and your look cool.
-  </p>
-  <button
-    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-  >
-    Buy Now
-  </button>
-</div>
-
-<!-- Product Card 5 -->
-<div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-  <img
-    src="/images/bracelets.jpg"
-    alt="Product 3"
-    class="w-full rounded mb-4"
-  />
-  <h3 class="text-xl font-semibold mb-2">Bracelets</h3>
-  <p class="text-gray-600 mb-4">
-    Elegant fashion bracelets to enhance your style and everyday outfit.
-  </p>
-  <button
-    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-  >
-    Buy Now
-  </button>
-</div>
-
-<!-- Product Card 6 -->
-<div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
-  <img
-    src="/images/i-pad.jpg"
-    alt="Product 3"
-    class="w-full rounded mb-4"
-  />
-  <h3 class="text-xl font-semibold mb-2">Ipad</h3>
-  <p class="text-gray-600 mb-4">
-    Experience performance and portability with the latest Apple iPad series.
-  </p>
-  <button
-    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-  >
-    Buy Now
-  </button>
-</div>
-
-
-      </div>
+  <!-- Product Showcase -->
+  <section id="products" class="py-16 px-6 md:px-20 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Featured Products</h2>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       
-    </section>
+      <!-- Product Card 1 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/smart watch.jpg" alt="Smart Watch" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Smart Watch</h3>
+        <p class="text-gray-600 mb-4">Track your health and stay connected with our latest smart watch.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
 
-    <!-- Features Section -->
-<section class="py-16 px-6 md:px-20 bg-gray-50">
-  <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-    
-    <!-- Feature 1 -->
-    <div>
-      <div class="text-blue-600 text-4xl mb-4">🚚</div>
-      <h3 class="text-xl font-semibold mb-2">Free Shipping</h3>
-      <p class="text-gray-600">On all orders above ₹499 – no extra charges.</p>
+      <!-- Product Card 2 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/wireless headphone.jpg" alt="Wireless Headphones" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Wireless Headphones</h3>
+        <p class="text-gray-600 mb-4">Enjoy high-quality sound with our noise-cancelling wireless headphones.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/Blutooth speaker.jpg" alt="Bluetooth Speaker" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Bluetooth Speaker</h3>
+        <p class="text-gray-600 mb-4">Powerful sound and deep bass in a compact portable speaker.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/sunglasses.jpg" alt="Sunglasses" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Sunglasses</h3>
+        <p class="text-gray-600 mb-4">Stylish UV-protection sunglasses for comfort and flair.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/bracelets.jpg" alt="Bracelets" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Bracelets</h3>
+        <p class="text-gray-600 mb-4">Elegant bracelets to complement your everyday style.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="border rounded-lg p-6 shadow hover:shadow-xl transition">
+        <img src="/images/i-pad.jpg" alt="iPad" class="w-full rounded mb-4" />
+        <h3 class="text-xl font-semibold mb-2">iPad</h3>
+        <p class="text-gray-600 mb-4">Experience performance and portability with the Apple iPad.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
     </div>
+  </section>
 
-    <!-- Feature 2 -->
-    <div>
-      <div class="text-blue-600 text-4xl mb-4">🔒</div>
-      <h3 class="text-xl font-semibold mb-2">Secure Payments</h3>
-      <p class="text-gray-600">Your data and transactions are 100% protected.</p>
+  <!-- Features Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      
+      <div>
+        <div class="text-blue-600 text-4xl mb-4">🚚</div>
+        <h3 class="text-xl font-semibold mb-2">Free Shipping</h3>
+        <p class="text-gray-600">On all orders above ₹499 – no extra charges.</p>
+      </div>
+
+      <div>
+        <div class="text-blue-600 text-4xl mb-4">🔒</div>
+        <h3 class="text-xl font-semibold mb-2">Secure Payments</h3>
+        <p class="text-gray-600">Your data and transactions are 100% protected.</p>
+      </div>
+
+      <div>
+        <div class="text-blue-600 text-4xl mb-4">💬</div>
+        <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+        <p class="text-gray-600">Get help anytime from our dedicated team.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Feature 3 -->
-    <div>
-      <div class="text-blue-600 text-4xl mb-4">💬</div>
-      <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
-      <p class="text-gray-600">Get help anytime from our dedicated team.</p>
-    </div>
-
-  </div>
-</section>
-<!-- Testimonials Section -->
-<section class="py-16 px-6 md:px-20 bg-white">
-  <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ <!-- Testimonials Section -->
+<section class="py-20 px-6 md:px-20 bg-white">
+  <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-14">What Our Customers Say</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
     <!-- Testimonial 1 -->
-    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-      <p class="text-gray-700 mb-4">"Absolutely love the smart watch! Stylish, responsive, and the battery lasts long."</p>
-      <div class="flex items-center space-x-4">
-        <img src="https://i.pravatar.cc/100?img=1" alt="User 1" class="w-12 h-12 rounded-full" />
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+      <p class="text-gray-700 italic mb-6">"Absolutely love the smart watch! It’s sleek, responsive, and the battery lasts for days."</p>
+      <div class="flex items-center gap-4">
+        <img src="/images/Anjali.jpg" alt="Anjali Sharma" class="w-14 h-14 rounded-full object-cover" />
         <div>
-          <h4 class="font-semibold text-lg">Anjali Sharma</h4>
+          <h4 class="font-semibold text-lg text-gray-900">Anjali Sharma</h4>
           <p class="text-sm text-gray-500">Delhi, India</p>
         </div>
       </div>
     </div>
 
     <!-- Testimonial 2 -->
-    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-      <p class="text-gray-700 mb-4">"Headphones sound amazing! Totally worth it for music and calls."</p>
-      <div class="flex items-center space-x-4">
-        <img src="https://i.pravatar.cc/100?img=2" alt="User 2" class="w-12 h-12 rounded-full" />
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+      <p class="text-gray-700 italic mb-6">"These headphones are incredible – crystal clear sound and perfect for work calls."</p>
+      <div class="flex items-center gap-4">
+        <img src="/images/Ravi.jpg" alt="Ravi Kumar" class="w-14 h-14 rounded-full object-cover" />
         <div>
-          <h4 class="font-semibold text-lg">Ravi Kumar</h4>
+          <h4 class="font-semibold text-lg text-gray-900">Ravi Kumar</h4>
           <p class="text-sm text-gray-500">Bangalore, India</p>
         </div>
       </div>
     </div>
 
     <!-- Testimonial 3 -->
-    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-      <p class="text-gray-700 mb-4">"The Bluetooth speaker is super handy and loud enough for small gatherings."</p>
-      <div class="flex items-center space-x-4">
-        <img src="https://i.pravatar.cc/100?img=3" alt="User 3" class="w-12 h-12 rounded-full" />
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+      <p class="text-gray-700 italic mb-6">"The Bluetooth speaker is compact yet powerful—perfect for small get-togethers."</p>
+      <div class="flex items-center gap-4">
+        <img src="/images/Priya.jpg" alt="Priya Mehta" class="w-14 h-14 rounded-full object-cover" />
         <div>
-          <h4 class="font-semibold text-lg">Priya Mehta</h4>
+          <h4 class="font-semibold text-lg text-gray-900">Priya Mehta</h4>
           <p class="text-sm text-gray-500">Mumbai, India</p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
-<!-- CTA Section -->
-<section class="bg-gray-100 text-gray-900 py-16 px-6 md:px-20 text-center rounded-t-3xl">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4">
-    Ready to Upgrade Your Lifestyle?
-  </h2>
-  <p class="text-lg mb-8">
-    Get your hands on the latest tech gear and transform your daily routine today.
-  </p>
+
+<!-- Call-to-Action Section -->
+<section class="bg-gray-100 text-center py-20 px-6 md:px-20 rounded-t-3xl">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">Ready to Elevate Your Everyday?</h2>
+  <p class="text-lg text-gray-600 mb-10">Discover the latest smart gadgets designed to boost productivity, fitness, and entertainment.</p>
   <a href="#products">
-    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl">
       Start Shopping
     </button>
   </a>
 </section>
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-10 px-6 md:px-20">
-  <div class="flex flex-col md:flex-row items-center justify-between">
-    <p class="text-center md:text-left mb-4 md:mb-0">© 2025 FutureCart. All rights reserved.</p>
-    <div class="flex space-x-4">
-      <a href="#" class="hover:text-blue-400">Privacy Policy</a>
-      <a href="#" class="hover:text-blue-400">Terms of Service</a>
-      <a href="#" class="hover:text-blue-400">Contact</a>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 px-6 md:px-20">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <p class="text-center md:text-left mb-4 md:mb-0">© 2025 FutureCart. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-400">Terms of Service</a>
+        <a href="#" class="hover:text-blue-400">Contact</a>
+      </div>
     </div>
-  </div>
-</footer>
-  </body>
+  </footer>
+</body>
 </html>
