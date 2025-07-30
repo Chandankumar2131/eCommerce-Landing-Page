@@ -3,22 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>eCommerce Landing Page</title>
+  <title>FutureCart - Premium Products</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom Styles -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 
 <body class="bg-white text-gray-900">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 md:px-20 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <span class="text-2xl font-extrabold text-blue-600">🛒 FutureCart</span>
+    </div>
+    <div class="hidden md:flex gap-6">
+      <a href="#products" class="hover:text-blue-600 font-medium">Products</a>
+      <a href="#why" class="hover:text-blue-600 font-medium">Why Us</a>
+      <a href="#testimonials" class="hover:text-blue-600 font-medium">Reviews</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="cart-btn" class="relative text-lg">
+        🛍️ 
+        <span id="cart-count" class="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 rounded-full">0</span>
+      </button>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-20 bg-gradient-to-r from-blue-50 to-white">
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 pt-32 pb-20 bg-gradient-to-r from-blue-50 to-white">
     <!-- Text Content -->
     <div class="md:w-1/2 text-center md:text-left md:pr-10">
       <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-800 leading-tight">
@@ -55,7 +70,7 @@
         <img src="/images/smart watch.jpg" alt="Smart Watch" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">Smart Watch</h3>
         <p class="text-gray-600 mb-4">Track your health and stay connected with our latest smart watch.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
 
       <!-- Product Card 2 -->
@@ -63,7 +78,7 @@
         <img src="/images/wireless headphone.jpg" alt="Wireless Headphones" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">Wireless Headphones</h3>
         <p class="text-gray-600 mb-4">Enjoy high-quality sound with our noise-cancelling wireless headphones.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
 
       <!-- Product Card 3 -->
@@ -71,7 +86,7 @@
         <img src="/images/Blutooth speaker.jpg" alt="Bluetooth Speaker" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">Bluetooth Speaker</h3>
         <p class="text-gray-600 mb-4">Powerful sound and deep bass in a compact portable speaker.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
 
       <!-- Product Card 4 -->
@@ -79,7 +94,7 @@
         <img src="/images/sunglasses.jpg" alt="Sunglasses" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">Sunglasses</h3>
         <p class="text-gray-600 mb-4">Stylish UV-protection sunglasses for comfort and flair.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
 
       <!-- Product Card 5 -->
@@ -87,7 +102,7 @@
         <img src="/images/bracelets.jpg" alt="Bracelets" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">Bracelets</h3>
         <p class="text-gray-600 mb-4">Elegant bracelets to complement your everyday style.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
 
       <!-- Product Card 6 -->
@@ -95,13 +110,13 @@
         <img src="/images/i-pad.jpg" alt="iPad" class="w-full rounded mb-4" />
         <h3 class="text-xl font-semibold mb-2">iPad</h3>
         <p class="text-gray-600 mb-4">Experience performance and portability with the Apple iPad.</p>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 add-to-cart">Add to Cart</button>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="py-16 px-6 md:px-20 bg-gray-50">
+  <section id="why" class="py-16 px-6 md:px-20 bg-gray-50">
     <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
       
@@ -126,7 +141,7 @@
   </section>
 
  <!-- Testimonials Section -->
-<section class="py-20 px-6 md:px-20 bg-white">
+<section id="testimonials" class="py-20 px-6 md:px-20 bg-white">
   <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-14">What Our Customers Say</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
@@ -179,7 +194,6 @@
   </a>
 </section>
 
-
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-10 px-6 md:px-20">
     <div class="flex flex-col md:flex-row items-center justify-between">
@@ -191,5 +205,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- JS for cart -->
+  <script>
+    const cartCount = document.getElementById("cart-count");
+    document.querySelectorAll(".add-to-cart").forEach(btn => {
+      btn.addEventListener("click", () => {
+        cartCount.textContent = parseInt(cartCount.textContent) + 1;
+      });
+    });
+  </script>
 </body>
 </html>
